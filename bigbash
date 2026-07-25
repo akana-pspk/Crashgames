@@ -1,0 +1,22 @@
+import random
+import time
+
+print("🚀 Welcome to Spaceman Crash Game")
+
+crash_point = round(random.uniform(1.20, 10.00), 2)
+
+multiplier = 1.00
+
+while multiplier < crash_point:
+    print(f"🚀 Spaceman: {multiplier:.2f}x")
+    time.sleep(0.3)
+    multiplier += 0.20
+
+print(f"\n💥 Crashed at {crash_point}x")
+
+cashout = float(input("Enter your Cash Out Multiplier: "))
+
+if cashout < crash_point:
+    print(f"🎉 You Won! Cashed out at {cashout}x")
+else:
+    print("😢 You Lost! Spaceman crashed before your cash out.")
