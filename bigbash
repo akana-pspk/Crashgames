@@ -20,3 +20,5 @@ if cashout < crash_point:
     print(f"🎉 You Won! Cashed out at {cashout}x")
 else:
     print("😢 You Lost! Spaceman crashed before your cash out.")
+
+Bonus card has been enabled
